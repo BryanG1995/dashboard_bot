@@ -22,9 +22,10 @@ export const ButtonActivate = () => {
     return (
         <button
             onClick={onClick}
-            style={{ backgroundColor: logged ? 'blue' : 'red' }}
+            // style={{ backgroundColor: logged ? 'blue' : 'red' }}
+            className={ !logged ? 'btn btn-lg btn-primary' : 'btn btn-lg btn-danger' }
         >
-            {logged ? "si soy" : "no soy"}
+            {!logged ? "Encender" : "Apagar"}
         </button>
     )
 }
