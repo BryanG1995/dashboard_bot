@@ -2,20 +2,20 @@ import React from 'react'
 
 export const About = () => {
     return (
-        
+
         <section className="py-3 py-md-5 py-xl-8">
             <div className="container">
                 <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                     <div className="col-12 col-lg-6 col-xl-5">
 
-                        <img className="img-fluid rounded"  src="https://64.media.tumblr.com/8ee6c3dd46176a9ddec3e99e37d10320/tumblr_ntbgsalNhv1qm8kxoo1_400.gifv" alt="a"/>
+                        <img className="img-fluid rounded" src="https://64.media.tumblr.com/8ee6c3dd46176a9ddec3e99e37d10320/tumblr_ntbgsalNhv1qm8kxoo1_400.gifv" alt="a" />
                     </div>
                     <div className="col-12 col-lg-6 col-xl-7">
                         <div className="row justify-content-xl-center">
                             <div className="col-12 col-xl-11">
-                                <h2 className="h1 mb-3">Who Are We?</h2>
-                                <p className="lead fs-4 text-secondary mb-3">We help people to build incredible brands and superior products. Our perspective is to furnish outstanding captivating services.</p>
-                                <p className="mb-5">Nullam gravida orci ac luctus molestie. Fusce finibus congue erat, non aliquam magna tincidunt at. Aenean lacinia arcu ex, sed pharetra nibh porta a. Curabitur vel consequat nibh, ac interdum nisl. Nunc pulvinar nec massa vitae sollicitudin.</p>
+                                <h2 className="h1 mb-3">¿Quiénes somos?</h2>
+                                <p className="lead fs-4 text-secondary mb-3">2 Ingenieros Civiles Informaticos los cuales están reforzado lo aprendido y aprendiendo nuevas cosas </p>
+                                {/* <p className="mb-5">Nullam gravida orci ac luctus molestie. Fusce finibus congue erat, non aliquam magna tincidunt at. Aenean lacinia arcu ex, sed pharetra nibh porta a. Curabitur vel consequat nibh, ac interdum nisl. Nunc pulvinar nec massa vitae sollicitudin.</p> */}
                                 <div className="row gy-4 gy-md-0 gx-xxl-5X">
                                     <div className="col-12 col-md-6">
                                         <div className="d-flex">
@@ -25,8 +25,10 @@ export const About = () => {
                                                 </svg>
                                             </div>
                                             <div>
-                                                <h4 className="mb-3">Versatile Brand</h4>
-                                                <p className="text-secondary mb-0">We are crafting a digital method that subsists life across all mediums.</p>
+                                                <h4 className="mb-3">BryanG1995</h4>
+                                                <p className="text-secondary mb-0">
+                                                    <a href="https://github.com/BryanG1995" target="_blank">https://github.com/BryanG1995</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -38,8 +40,10 @@ export const About = () => {
                                                 </svg>
                                             </div>
                                             <div>
-                                                <h4 className="mb-3">Digital Agency</h4>
-                                                <p className="text-secondary mb-0">We believe in innovation by merging primary with elaborate ideas.</p>
+                                                <h4 className="mb-3">Paserno</h4>
+                                                <p className="text-secondary mb-0">
+                                                    <a href="https://github.com/Paserno" target="_blank">https://github.com/Paserno</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>

@@ -15,7 +15,7 @@ export const Container = () => {
                     <div className="p-4 p-lg-5 bg-light rounded-3 text-center">
                         <div className="m-4 m-lg-5">
                             <h1 className="display-5 fw-bold">Panel de Administración</h1>
-                            <p className="fs-4">Paserno pto</p>
+                            <p className="fs-4">Bot discord</p>
                             {/* <a className="btn btn-primary btn-lg" href="#!">Call to action</a> */}
                             <ButtonActivate/>
                         </div>
