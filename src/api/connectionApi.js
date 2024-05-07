@@ -1,5 +1,5 @@
 
-const baseUrl = 'http://localhost:8080/api';
+const baseUrl  = import.meta.env.VITE_BASE_URL;
 
 export const connectionApi = async (endpoint, data, method = 'GET') => {
 
