@@ -1,17 +1,21 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ActivateContext } from '../context/ActivateContext';
 import Swal from 'sweetalert2';
+import {aviso_alerta} from '../utilities/aviso'
 
 export const ButtonActivate = () => {
-    const { checkConnection, logged, activateBot, deactivateBot } = useContext(ActivateContext);
+    const { checkConnection, logged, activateBot, deactivateBot, serverOn } = useContext(ActivateContext);
 
     useEffect(() => {
         checkConnection();
+        
     }, [])
 
 
     const onClick = () => {
         console.log('estado esta en: ', logged);
+
+
         Swal.fire({
             title: "¿Estas seguro?",
             // text: "You won't be able to revert this!",
@@ -24,22 +28,16 @@ export const ButtonActivate = () => {
             if (result.isConfirmed) {
                 if (!logged) {
                     activateBot();
-                    Swal.fire({
-                        title: "Encendido",
-                        text: "EL bot se ha encendido correctamente",
-                        icon: "success"
+                    
+                    console.log("el test es " );
 
-                    });
+                    // aviso_alerta(logged);
+
                     return;
                 }
+                
                 deactivateBot();
-
-                Swal.fire({
-                    title: "Apagado",
-                    text: "EL bot se ha apagado correctamente",
-                    icon: "success"
-
-                });
+                // aviso_alerta(logged);
                 return
             }
         });
@@ -56,8 +54,9 @@ export const ButtonActivate = () => {
     return (
         <button
             onClick={onClick}
+            disabled={!serverOn}
             // style={{ backgroundColor: logged ? 'blue' : 'red' }}
-            className={!logged ? 'btn btn-lg btn-primary' : 'btn btn-lg btn-danger'}
+            className={!serverOn ? 'btn btn-lg btn-secondary' : !logged ? 'btn btn-lg btn-primary' : 'btn btn-lg btn-danger'}
         >
             {!logged ? "Encender" : "Apagar"}
         </button>
